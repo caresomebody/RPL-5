@@ -5,7 +5,6 @@
 */
 
 CREATE TABLE Pemilih(
-    idPemilih VARCHAR (8) NOT NULL
     nik VARCHAR(20) NOT NULL,
     nama_lengkap VARCHAR(255) NOT NULL,
     tanggal_lahir VARCHAR(100) NOT NULL,
@@ -14,7 +13,7 @@ CREATE TABLE Pemilih(
     pin VARCHAR (20) NOT NULL,
     foto VARCHAR(100) NOT NULL,
     status_memilih BOOLEAN NOT NULL,
-    CONSTRAINT pemilih_idPemilih_pk PRIMARY KEY(idPemilih)
+    CONSTRAINT pemilih_nik_pk PRIMARY KEY(nik)
 );
 
 CREATE TABLE Paslon(
@@ -32,23 +31,23 @@ CREATE TABLE Paslon(
 /* Paslon 01 */
 
 INSERT INTO paslon 
-(no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
+(idPaslon,no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
 VALUES 
-('1', 'Ali dan Ojan', 'Kepala dan Wakil Daerah', 'Alegi Kemunduran, Mendorong Kemajuan', 'Golker', 0, 'paslon01.jpg');
+('Paslon1','1', 'Ali dan Ojan', 'Kepala dan Wakil Daerah', 'Alegi Kemunduran, Mendorong Kemajuan', 'Golker', 0, 'paslon01.jpg');
 
 /* Paslon 02 */
 
 INSERT INTO paslon 
-(no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
+(idPaslon,no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
 VALUES 
-('2', 'Nur Laely dan Nur Ul', 'Kepala dan Wakil Daerah', 'Pecintaan tak akan pernah mati', 'Demokratos', 0, 'paslon02.jpg');
+('Paslon2','2', 'Nur Laely dan Nur Ul', 'Kepala dan Wakil Daerah', 'Pecintaan tak akan pernah mati', 'Demokratos', 0, 'paslon02.jpg');
 
 /* Paslon 03 */
 
 INSERT INTO paslon 
-(no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
+(idPaslon,no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
 VALUES 
-('3', 'Pijan dan Naufal', 'Kepala dan Wakil Kepala Daerah', 'Menjadi YES MAN adalah jalan ninjaku', 'PDKALE', 0, 'paslon03.jpg');
+('Paslon3','3', 'Pijan dan Naufal', 'Kepala dan Wakil Kepala Daerah', 'Menjadi YES MAN adalah jalan ninjaku', 'PDKALE', 0, 'paslon03.jpg');
 
 CREATE TABLE Quick_Count(
     id_pemilu VARCHAR(8) NOT NULL,

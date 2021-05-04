@@ -19,7 +19,6 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    left: -50rem;
     transition: 1s;
 }
 .rekam-jejak__paslon {

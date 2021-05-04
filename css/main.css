@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.hero-bg{
+    background-image: url('../img/images (9).jpeg');
+    background-size:100% 100%;
+    padding: 60px;
+}
+
+.hijau{
+    background-color: #4B5C1A;
+}
